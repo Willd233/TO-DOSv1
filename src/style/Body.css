@@ -1,0 +1,39 @@
+body {
+  width: 90%;  
+  margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    color: #1E1E1F;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+  
+  #root {
+    background: #47a1ce;
+    grid-area: root;
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "todo1"
+    "todo2"
+    "todo3"
+    "todo5";
+
+  }
+.container{
+  display: grid;
+  grid-template-areas:
+"todoMues   root";
+column-gap: 20px;
+}
+  #root2{
+    display: grid;
+    grid-area: todoMues;
+    align-content: center;
+    justify-content: center;
+    background: firebrick;
+
+  }
+  
