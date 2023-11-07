@@ -8,8 +8,8 @@ import { CreateTodoButton } from './CreateTodoButton';
 const defaultTodos = [
   {text: `cocinar`,  completed: true},
   {text: `lavar`,  completed: false},
-  {text: `fregar`,  completed: false},
-  {text: `dormir`,  completed: false},
+  {text: `fregar`,  completed: true},
+  {text: `dormir`,  completed: true},
 ]
 
 function App() {

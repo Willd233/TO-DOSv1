@@ -10,7 +10,7 @@ body {
   }
   
   #root {
-    background: #47a1ce;
+    background: #2a67863b;
     grid-area: root;
     position: relative;
     min-height: 100vh;
@@ -33,7 +33,7 @@ column-gap: 20px;
     grid-area: todoMues;
     align-content: center;
     justify-content: center;
-    background: firebrick;
+    background: rgba(178, 34, 34, 0.37);
 
   }
   
