@@ -1,4 +1,7 @@
 import './style/TodoItem.css';
+import { BsCheckLg } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
+
 
 function TodoItem(props) {
   return (
@@ -7,16 +10,16 @@ function TodoItem(props) {
         className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
         onClick={props.onComplete}
       >
-        V
+       <BsCheckLg /> 
       </span>
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
         {props.text}
       </p>
       <span
-        className="Icon Icon-delete"
+        className="Icon Icon-delete "
         onClick={props.onDelete}
       >
-        X
+       <IoClose />
       </span>
     </li>
   );
