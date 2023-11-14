@@ -1,8 +1,8 @@
-import { TodoCounter } from './TodoCounter';
+import { TodoCounter } from './TodoCounter/Counter';
 import React from 'react';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
+import { TodoSearch } from './TodoSearch/search';
+import { TodoList } from './TodoList/list';
+import { TodoItem } from './TodoItem/item';
 import { CreateTodoButton } from './CreateTodoButton';
 
 

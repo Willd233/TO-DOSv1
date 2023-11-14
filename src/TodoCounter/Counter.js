@@ -1,6 +1,5 @@
-import "./style/TodoCounter.css";
-import "./style/Body.css";
-
+import "./TodoCounter.css";
+import '../../src/style/index.css';
   
   function TodoCounter({ total, completed }) {
     return(

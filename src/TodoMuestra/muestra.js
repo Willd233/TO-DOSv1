@@ -1,4 +1,5 @@
-import "./style/Body.css";
+import '../../src/style/index.css';
+
 function TodoMuestra() {
     return(
 

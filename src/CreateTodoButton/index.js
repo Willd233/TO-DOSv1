@@ -1,5 +1,5 @@
-import "./style/CreateTodoButton.css";
-import "./style/Body.css";
+import "./CreateTodoButton.css";
+import '../../src/style/index.css';
 function CreateTodoButton() {
     return(
 

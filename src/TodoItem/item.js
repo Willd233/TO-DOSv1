@@ -1,4 +1,4 @@
-import './style/TodoItem.css';
+import './TodoItem.css';
 import { BsCheckLg } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 

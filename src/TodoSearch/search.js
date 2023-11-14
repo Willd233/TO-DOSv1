@@ -1,6 +1,7 @@
 
-import "./style/TodoSearch.css";
-import "./style/Body.css";
+import "./TodoSearch.css";
+import '../../src/style/index.css';
+
 import React from "react";
 
 function TodoSearch({

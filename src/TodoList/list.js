@@ -1,5 +1,6 @@
-import "./style/TodoList.css";
-import "./style/Body.css";
+import "./TodoList.css";
+import '../../src/style/index.css';
+
 function TodoList({children}) {
     return(
         <ul className="TodoList">
