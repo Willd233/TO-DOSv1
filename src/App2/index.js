@@ -1,4 +1,4 @@
-import { TodoMuestra } from './TodoMuestra/muestra';
+import { TodoMuestra } from '../TodoMuestra/muestra';
 function App2() {
     return (
       <>
