@@ -6,46 +6,44 @@ import { TodosLoading } from '../TodosLoading/loading';
 import { TodosError } from '../TodosError/error';
 import { EmptyTodos } from '../EmptyTodos/empty';
 import { CreateTodoButton } from '../CreateTodoButton';
-function AppUI ({
+import { TodoCountext } from '../TodoContext/context';
+import React from 'react';
+
+function AppUI() {
+  const {
     loading,
     error,
-    completedTodos,
-    totalTodos,
-    searchValue,
-    setSearchValue,
     searchedTodos,
     completeTodo,
     deleteTodo
-}) {
-    return (
-        <>
-          
-          <TodoCounter completed={completedTodos} total={totalTodos} />
-          <TodoSearch 
-            searchValue={searchValue}
-            setSearchValue={setSearchValue}
+  } = React.useContext(TodoCountext);
+
+  return (
+    <>
+      <TodoCounter />
+      <TodoSearch />
+      <TodoList>
+        {loading && <TodosLoading />}
+        {error && <TodosError />}
+        {(!loading && searchedTodos.length ===
+          0) && <EmptyTodos />}
+
+        {searchedTodos.map(todo => (
+          <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+            onComplete={() => completeTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
           />
-    
-          <TodoList>
-            {loading && <TodosLoading />}
-            {error && <TodosError />}
-            {(!loading && searchedTodos.length === 
-              0) && <EmptyTodos />}
-           
-           {searchedTodos.map(todo => (
-              <TodoItem 
-              key={todo.text} 
-              text={todo.text}
-              completed={todo.completed}
-              onComplete = {() => completeTodo(todo.text)}
-              onDelete = {() => deleteTodo(todo.text)}
-              />
-            ))}
-          </TodoList>
-          <CreateTodoButton />  
-    
-        </>
-      );
+        ))}
+      </TodoList>
+
+
+      <CreateTodoButton />
+
+    </>
+  );
 }
 
-export {AppUI}
+export { AppUI }
