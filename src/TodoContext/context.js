@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-const TodoCountext = React.createContext();
+const TodoContext = React.createContext();
 
 function TodoProvider({ children }) {
     const {
@@ -11,6 +11,7 @@ function TodoProvider({ children }) {
         error,
     } = useLocalStorage('TODOS_V1', []);
     const [searchValue, setSearchValue] = React.useState('');
+    const [openModal, setOpenModal] = React.useState(false);
 
     const completedTodos = todos.filter(
         todo => !!todo.completed)
@@ -24,6 +25,15 @@ function TodoProvider({ children }) {
             return todoText.includes(searchText);
         }
     );
+
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            text,
+            completed: false,
+        })
+        saveTodos(newTodos);
+    }
 
     const completeTodo = (text) => {
         const newTodos = [...todos];
@@ -44,7 +54,7 @@ function TodoProvider({ children }) {
     }
 
     return (
-        <TodoCountext.Provider value={{
+        <TodoContext.Provider value={{
             loading,
             error,
             completedTodos,
@@ -53,11 +63,14 @@ function TodoProvider({ children }) {
             setSearchValue,
             searchedTodos,
             completeTodo,
-            deleteTodo
+            deleteTodo,
+            openModal,
+            setOpenModal,
+            addTodo
         }}>
             {children}
-        </TodoCountext.Provider>
+        </TodoContext.Provider>
     );
 }
 
-export { TodoCountext, TodoProvider }
+export { TodoContext, TodoProvider }

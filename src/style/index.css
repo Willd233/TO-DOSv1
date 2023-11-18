@@ -1,9 +1,8 @@
 body {
-
+    display: grid;
   margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    display: grid;
     color: #1E1E1F;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   }
@@ -34,7 +33,8 @@ margin: 0 auto;
     grid-area: todoMues;
     align-content: center;
     justify-content: center;
-    background: rgba(178, 34, 34, 0.37);
+    background: rgba(97, 11, 11, 0.37);
 
   }
+
   
