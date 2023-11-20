@@ -7,14 +7,3 @@
     list-style: none;
     align-content: center;
   }
-  @media(min-width: 800px){
-    .TodoList {
-      grid-area: todo3;
-      display: grid;
-      width: 90%;
-        margin: 0 auto;
-        padding: 0 0 56px 0;
-        list-style: none;
-        align-content: center;
-      }
-  }
