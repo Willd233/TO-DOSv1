@@ -11,7 +11,7 @@ body {
   background: #2a67863b;
   grid-area: root;
   position: relative;
-  min-height: 85vh;
+  min-height: 89vh;
   display: grid;
   grid-template-areas:
     "todo1"
@@ -29,14 +29,12 @@ body {
     "todoMues"
     " root";
   margin: 0 auto;
-  grid-row-gap: 20px;
-
 }
 
 #root2 {
   display: grid;
+  margin: 10px 0;
   grid-area: todoMues;
-  align-content: center;
   justify-content: center;
   background: rgba(97, 11, 11, 0.37);
   border-radius: 20px;
@@ -51,8 +49,7 @@ body {
       "todoMues"
       " root";
     margin: 0 auto;
-    grid-row-gap: 20px;
-  
+
   }
   
 }
