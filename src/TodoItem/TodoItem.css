@@ -9,7 +9,7 @@
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
   }
   .TodoItem:hover{
-    border: 1px solid #61DAFA;
+    border: 2px solid #61DAFA;
   }
   
   .TodoItem-p {
