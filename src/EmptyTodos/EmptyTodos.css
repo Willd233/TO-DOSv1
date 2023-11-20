@@ -3,13 +3,13 @@
     height: 30px;
     font-size: 20px;
     font-family: sans-serif;
-    color: #fff;
+    color: rgb(0, 0, 0)b0b;
     position: fixed;
     padding: auto;
 }
   
   .EmptyTodos:after {
-    content: "Crea Tu Primer TODO...";
+    content: "Crea Tu TO-DO...";
     position: absolute;
 
   }
