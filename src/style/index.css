@@ -18,6 +18,7 @@ body {
     "todo1"
     "todo2"
     "todo3"
+    "todo4"
     "todo5";
   border-radius: 20px;
 
@@ -27,8 +28,8 @@ body {
   width: 90%;
   display: grid;
   grid-template-areas:
-    "todoMues"
-    " root";
+  " root" 
+  "todoMues";
   margin: 0 auto;
 }
 
@@ -49,8 +50,8 @@ body {
     width: 50%;
     display: grid;
     grid-template-areas:
-      "todoMues"
-      " root";
+    " root" 
+    "todoMues";
     margin: 0 auto;
 
   }
