@@ -9,7 +9,7 @@
 }
   
   .EmptyTodos:after {
-    content: "Crea Tu Primer TODO...";
+    content: "Crea Tu TO-DO...";
     position: absolute;
 
   }

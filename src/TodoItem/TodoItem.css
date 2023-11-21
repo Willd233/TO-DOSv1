@@ -7,11 +7,9 @@
     margin-top: 24px;
     text-align: center;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+    
   }
-  .TodoItem:hover{
-    border: 1px solid #61DAFA;
-  }
-  
+
   .TodoItem-p {
     margin: 24px 0 24px 24px;
     font-size: 18px;

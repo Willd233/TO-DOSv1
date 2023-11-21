@@ -19,9 +19,10 @@
     font-family: 'Montserrat';
     font-weight: 400;
     margin: 0 auto;
-  }
+    }
   
   .TodoSearch:focus {
     outline-color: #61DAFA;
   }
+  
   

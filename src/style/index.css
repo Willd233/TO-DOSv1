@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(15, 19, 18);
   display: grid;
   margin: 0 auto;
   padding: 0;
@@ -8,7 +9,7 @@ body {
 }
 
 #root {
-  background: #2a67863b;
+  background: #1a417cfb;
   grid-area: root;
   position: relative;
   min-height: 89vh;
@@ -32,12 +33,14 @@ body {
 }
 
 #root2 {
+  color: white;
   display: grid;
   margin: 10px 0;
   grid-area: todoMues;
   justify-content: center;
-  background: rgba(97, 11, 11, 0.37);
+  background: rgba(0, 0, 0, 0.473);
   border-radius: 20px;
+  box-shadow: 0 2px 5px rgb(241, 235, 235);
 
 }
 
