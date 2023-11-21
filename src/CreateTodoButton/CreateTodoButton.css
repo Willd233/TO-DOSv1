@@ -1,5 +1,5 @@
 .CreateTodoButton {
-  grid-area: todo4;
+  grid-area: todo5;
   align-items: center;
   background-color: #61dafa;
   border: none;
@@ -12,13 +12,14 @@
   font-weight: 700;
   height: 60px;
   justify-content: space-evenly;
-  place-self: center end;
+  place-self: flex-end;
   transform: rotate(0);
-  transition: .3s ease;
+  transition: .7s ease;
   width: 60px;
+  margin: 20px;
   z-index: 1;
 }
 
 .CreateTodoButton:hover {
-  transform: rotate(124deg);
+  transform: rotate(180deg);
 }

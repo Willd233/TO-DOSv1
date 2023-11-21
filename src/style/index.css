@@ -18,10 +18,9 @@ body {
     "todo1"
     "todo2"
     "todo3"
-    "todo4"
     "todo5";
   border-radius: 20px;
-
+  margin-top: 20px;
 }
 
 .container {
@@ -34,6 +33,7 @@ body {
 }
 
 #root2 {
+  font-size: 13px;
   color: white;
   display: grid;
   margin: 10px 0;
