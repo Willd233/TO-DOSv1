@@ -1,34 +1,24 @@
 .CreateTodoButton {
-  grid-area: todo5;
-  background-color: #61DAFA;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  grid-area: todo4;
+  align-items: center;
+  background-color: #61dafa;
   border: none;
   border-radius: 50%;
+  box-shadow: 0 5px 25px #61dafa80;
+  color: #fafafa;
   cursor: pointer;
-  font-size: 50px;
-  font-weight: bold;
-  color: #FAFAFA;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
   height: 60px;
-  width: 60px;
+  justify-content: space-evenly;
   place-self: center end;
   transform: rotate(0);
   transition: .3s ease;
+  width: 60px;
   z-index: 1;
-
-  /* Vendor prefixes for border-radius and box-shadow */
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-
-  -webkit-box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
-  -moz-box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
 }
 
 .CreateTodoButton:hover {
-  transform: rotate(224deg);
+  transform: rotate(124deg);
 }
