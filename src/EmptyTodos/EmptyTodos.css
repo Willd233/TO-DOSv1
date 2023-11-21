@@ -1,42 +1,60 @@
-.EmptyTodos {
-   width: 20%;
-    height: 30px;
-    font-size: 20px;
-    font-family: sans-serif;
-    color: rgb(0, 0, 0)b0b;
-    position: fixed;
-    padding: auto;
+.EmptyTodo{
+  padding: 0;
+  margin: 0 ;
+  width: 100%;
 }
-  
-  .EmptyTodos:after {
-    content: "Crea Tu TO-DO...";
-    position: absolute;
+.p{
+  color: white;
+  display: grid;
+  justify-content: center;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  animation: texto-animado 2s infinite linear;
 
+}
+
+.p2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  font-size: 70px;
+  overflow-wrap: break-word;
+  animation: rotate infinite linear 3s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .EmptyTodos:after {
-    animation: cargands 1s infinite linear;
+
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes cargands {
-    0% {
-      transform: translate(0, 0);
-    }
-  
-    25% {
-      transform: translate(0, -10px);
-    }
-  
-    50% {
-      transform: translate(0, 0);
-    }
-  
-    75% {
-      transform: translate(0, 10px);
-    }
-  
-    100% {
-      transform: translate(0, 0);
-    }
+}
+
+
+
+@keyframes texto-animado {
+  0% {
+    transform: translate(0, 0);
   }
-  
+
+  25% {
+    transform: translate(0, -10px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

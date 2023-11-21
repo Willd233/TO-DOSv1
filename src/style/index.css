@@ -20,7 +20,7 @@ body {
     "todo3"
     "todo5";
   border-radius: 20px;
-
+  margin-top: 20px;
 }
 
 .container {
@@ -33,6 +33,7 @@ body {
 }
 
 #root2 {
+  font-size: 13px;
   color: white;
   display: grid;
   margin: 10px 0;
