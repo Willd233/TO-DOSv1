@@ -19,6 +19,7 @@
   } */
 
   .TodoItem {
+    width: 95%;
     background-color: #FAFAFA;
     position: relative;
     display: flex;
@@ -27,11 +28,12 @@
     align-items: center;
     margin-top: 24px;
     box-shadow: 0px 5px 7px rgba(193, 194, 194, 0.822);
+    overflow-wrap: break-word;
   }
   
   .TodoItem-p {
-    margin: 24px 0 24px 24px;
-    width: calc(100% - 120px);
+    margin: 24px 9 24px 7px;
+    width: calc(93% - 120px);
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
