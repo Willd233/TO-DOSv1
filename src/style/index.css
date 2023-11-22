@@ -5,11 +5,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #1E1E1F;
-  font-family: sans-serif;
 }
 
 #root {
-  background: #1a417cfb;
+  background: #1a607cfb;
   grid-area: root;
   position: relative;
   min-height: 89vh;
