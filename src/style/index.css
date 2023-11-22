@@ -47,7 +47,7 @@ body {
 
 @media(min-width: 800px){
   .container {
-    width: 50%;
+    width: 90%;
     display: grid;
     grid-template-areas:
     " root" 
