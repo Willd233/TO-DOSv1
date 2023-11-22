@@ -19,6 +19,7 @@
   } */
 
   .TodoItem {
+    width: 95%;
     background-color: #FAFAFA;
     position: relative;
     display: flex;

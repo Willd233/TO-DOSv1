@@ -1,13 +1,13 @@
 body {
   background-color: rgb(15, 19, 18);
-  display: grid;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #1E1E1F;
 }
 
 #root {
+  width: 95%;
   background: rgba(66, 47, 47, 0.952);
   grid-area: root;
   position: relative;
@@ -21,15 +21,15 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   box-shadow: 0 0px 10px rgb(241, 235, 235);
+  padding: 0;
 }
 
 .container {
-  width: 90%;
   display: grid;
   grid-template-areas:
   " root" 
   "todoMues";
-  margin: 0 auto;
+  place-items: center;
 }
 
 #root2 {
@@ -45,7 +45,7 @@ body {
 
 }
 
-@media(min-width: 800px){
+@media(min-width: 1200px){
   .container {
     width: 50%;
     display: grid;
