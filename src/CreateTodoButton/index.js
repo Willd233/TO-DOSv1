@@ -1,18 +1,19 @@
 import "./CreateTodoButton.css";
 import '../../src/style/index.css';
-import { IoClose } from "react-icons/io5";
-function CreateTodoButton({setOpenModal}) {
-    return (
-      <button
-        className="CreateTodoButton"
-        onClick={() => setOpenModal(state => !state)}
-      >
-              <IoClose />
+import { FaPlus } from "react-icons/fa6";
 
-      </button>
-    );
-  }
-  
+function CreateTodoButton({ setOpenModal }) {
+  return (
+    <button
+      className="CreateTodoButton"
+      onClick={() => setOpenModal(state => !state)}
+    >
+      <FaPlus />
 
-  export {CreateTodoButton}
-  
+
+    </button>
+  );
+}
+
+
+export { CreateTodoButton }
