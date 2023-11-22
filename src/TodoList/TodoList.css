@@ -1,9 +1,8 @@
-.TodoList {
-  grid-area: todo3;
-  display: grid;
-  width: 90%;
-    margin: 0 auto;
+
+  .TodoList {  
+    margin: 0 auto; 
+     width: 95%;
     padding: 0 0 56px 0;
     list-style: none;
-    align-content: center;
+    
   }
