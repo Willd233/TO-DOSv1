@@ -8,7 +8,7 @@ body {
 }
 
 #root {
-  background: #1a607cfb;
+  background: rgba(66, 47, 47, 0.952);
   grid-area: root;
   position: relative;
   min-height: 89vh;
@@ -20,6 +20,7 @@ body {
     "todo5";
   border-radius: 20px;
   margin-top: 20px;
+  box-shadow: 0 0px 10px rgb(241, 235, 235);
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
   margin: 10px 0;
   grid-area: todoMues;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.473);
+  background: rgba(73, 55, 55, 0.473);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgb(241, 235, 235);
 
