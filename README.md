@@ -1,4 +1,4 @@
-# Aplicacion de lista de tareas por hacer
+# Aplicacion de tareas por hacer 
 
 ¡Hola, Platzinauta!
 
