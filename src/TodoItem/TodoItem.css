@@ -5,6 +5,7 @@
     background-color: #FAFAFA;
     position: relative;
     display: grid;
+    margin-top: 20px;
     border-radius: 25px;
     align-items: center;
     box-shadow: 0px 5px 7px rgba(193, 194, 194, 0.822);
