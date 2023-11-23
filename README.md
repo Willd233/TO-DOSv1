@@ -1,4 +1,4 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# Aplicacion de lista de tareas por hacer
 
 ¡Hola, Platzinauta!
 
