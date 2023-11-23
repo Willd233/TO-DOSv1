@@ -4,6 +4,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #1E1E1F;
+  display: grid;
+  place-items: center;
+
 }
 
 #root {
@@ -24,6 +27,7 @@ body {
 }
 
 .container {
+  width: 100%;
   display: grid;
   grid-template-areas:
   " root" 
@@ -44,15 +48,13 @@ body {
 
 }
 
-@media(min-width: 1200px){
+@media(min-width: 800px){
   .container {
     width: 90%;
     display: grid;
     grid-template-areas:
     " root" 
     "todoMues";
-    margin: 0 auto;
-
   }
   
 }
