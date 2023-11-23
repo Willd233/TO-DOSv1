@@ -1,8 +1,8 @@
+.TodoList {
+  display: grid;
+  align-content: center;
+  padding: 0 0 56px 0;
+  list-style: none;
+  place-items: center;
 
-  .TodoList {  
-    display: grid;
-    place-items: center;
-    padding: 0 0 56px 0;
-    list-style: none;
-    
-  }
+}
