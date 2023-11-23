@@ -1,6 +1,6 @@
 .modal {
   display: grid;
-  width: 95vw;
+  width: 92vw;
   height: 89vh;
   background: rgba(80, 87, 85, 0.5);
   position: absolute;
@@ -12,7 +12,7 @@
 @media(min-width: 800px) { 
   .modal {
     display: grid;
-    width: 85.5vw;
+    width: 84vw;
     height: 89vh;
     background: rgba(80, 87, 85, 0.5);
     position: absolute;
@@ -22,11 +22,24 @@
     border-radius: 20px;
     }
   }
-
-@media(min-width: 1200px) { 
+  @media(min-width: 1200px) { 
+    .modal {
+      display: grid;
+      width: 84.5vw;
+      height: 89vh;
+      background: rgba(80, 87, 85, 0.5);
+      position: absolute;
+      top: 2vh; /* Use vh units for top positioning (2vh = 2% of viewport height) */
+      left: 7.3vw;
+      align-content: center;
+      border-radius: 20px;
+      }
+    }
+  
+@media(min-width: 1900px) { 
 .modal {
   display: grid;
-  width: 85.5vw;
+  width: 84.5vw;
   height: 89vh;
   background: rgba(80, 87, 85, 0.5);
   position: absolute;
