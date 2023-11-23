@@ -1,10 +1,10 @@
 .modal {
   display: grid;
-  width: 92vw;
+  width: 95vw;
   height: 89vh;
   background: rgba(80, 87, 85, 0.5);
   position: absolute;
-  top: 2vh;
+  top: 1vh;
   left: 2.5vw;
   align-content: center;
   border-radius: 20px;
