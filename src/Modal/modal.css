@@ -16,7 +16,7 @@
     height: 89vh;
     background: rgba(80, 87, 85, 0.5);
     position: absolute;
-    top: 2vh; /* Use vh units for top positioning (2vh = 2% of viewport height) */
+    top: 2vh; 
     left: 7.3vw;
     align-content: center;
     border-radius: 20px;
@@ -29,7 +29,7 @@
       height: 89vh;
       background: rgba(80, 87, 85, 0.5);
       position: absolute;
-      top: 2vh; /* Use vh units for top positioning (2vh = 2% of viewport height) */
+      top: 2vh; 
       left: 7.3vw;
       align-content: center;
       border-radius: 20px;
@@ -43,7 +43,7 @@
   height: 89vh;
   background: rgba(80, 87, 85, 0.5);
   position: absolute;
-  top: 2vh; /* Use vh units for top positioning (2vh = 2% of viewport height) */
+  top: 2vh; 
   left: 7.3vw;
   align-content: center;
   border-radius: 20px;

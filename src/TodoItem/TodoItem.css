@@ -22,13 +22,12 @@
     width: 95%;
     background-color: #FAFAFA;
     position: relative;
-    display: flex;
+    display: grid;
     border-radius: 25px;
-    justify-content: center;
     align-items: center;
-    margin-top: 24px;
     box-shadow: 0px 5px 7px rgba(193, 194, 194, 0.822);
     overflow-wrap: break-word;
+    justify-items: center;
   }
   
   .TodoItem-p {
