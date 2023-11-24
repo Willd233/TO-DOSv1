@@ -7,12 +7,15 @@
     display: grid;
     margin-top: 20px;
     border-radius: 25px;
+    border: 2px solid #caf5f5;
     align-items: center;
     box-shadow: 0px 5px 7px rgba(193, 194, 194, 0.822);
     overflow-wrap: break-word;
     justify-items: center;
   }
-  
+.TodoItem:hover{
+  background-color: #caf5f5;
+}
   .TodoItem-p {
     margin: 24px 9 24px 7px;
     width: calc(93% - 120px);

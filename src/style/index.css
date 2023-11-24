@@ -1,29 +1,43 @@
 body {
-  background-color: rgb(15, 19, 18);
+  background-color: #7ed3d34f;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #1E1E1F;
   display: grid;
   place-items: center;
 
 }
 
 #root {
-  width: 95%;
-  background: rgba(66, 47, 47, 0.952);
+  width: 100%;
   grid-area: root;
   position: relative;
-  min-height: 89vh;
+  min-height: 92vh;
   display: grid;
   grid-template-areas:
-    "todo1"
-    "todo2"
-    "todo3"
-    "todo5";
-  border-radius: 20px;
-  margin: 20px 0 20px;
+      "todo1"
+      "todo2"
+      "todo3"
+      "todo5";
   box-shadow: 0 0px 10px rgb(241, 235, 235);
+}
+@media(min-width: 500px){
+  #root {
+    width: 95%;
+    background: #fffffff3;
+    grid-area: root;
+    position: relative;
+    min-height: 89vh;
+    display: grid;
+    grid-template-areas:
+      "todo1"
+      "todo2"
+      "todo3"
+      "todo5";
+    border-radius: 20px;
+    margin: 20px 0 8px;
+    box-shadow: 0 0px 10px rgb(241, 235, 235);
+  }
 }
 
 .container {
@@ -36,16 +50,28 @@ body {
 }
 
 #root2 {
-  width: 95%;
+  width: 100%;
   font-size: 13px;
-  color: white;
+  color: #000000;
   display: grid;
   grid-area: todoMues;
   justify-content: center;
-  background: rgba(73, 55, 55, 0.473);
-  border-radius: 20px;
-  box-shadow: 0 2px 5px rgb(241, 235, 235);
-
+  background: #fffffff3;
+}
+@media(min-width: 500px){
+  #root2 {
+    width: 95%;
+    font-size: 13px;
+    color: #000000;
+    display: grid;
+    grid-area: todoMues;
+    justify-content: center;
+    background: #fffffff3;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgb(241, 235, 235);
+  
+  }
+  
 }
 
 @media(min-width: 800px){
