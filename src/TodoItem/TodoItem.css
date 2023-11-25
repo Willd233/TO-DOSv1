@@ -4,7 +4,7 @@
   background-color: #FAFAFA;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust minmax width to prevent overflowing */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax width to prevent overflowing */
   border-radius: 25px;
   border: 2px solid #caf5f5;
   box-shadow: 0px 5px 7px rgba(193, 194, 194, 0.822);

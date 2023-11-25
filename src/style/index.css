@@ -25,6 +25,7 @@ body {
 @media(min-width: 500px){
   #root {
     width: 95%;
+    height: 100vh;
     background: #fffffff3;
     grid-area: root;
     position: relative;
