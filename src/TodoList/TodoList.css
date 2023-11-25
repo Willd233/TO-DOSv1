@@ -1,6 +1,6 @@
 .TodoList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Adjust minmax width to prevent overflowing */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Adjust minmax width to prevent overflowing */
   align-content: center;
   padding: 0 0 56px 0;
   list-style: none;
