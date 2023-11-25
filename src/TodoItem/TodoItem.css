@@ -12,18 +12,33 @@
   justify-items: center;
   align-content: center;
 }
+@media(min-width: 350px){
+  .TodoItem {
+    height: 190px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjust minmax width to prevent overflowing */
+
+  }
+}
 @media(min-width: 500px){
   .TodoItem {
     height: 190px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust minmax width to prevent overflowing */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Adjust minmax width to prevent overflowing */
 
   }
 }
-@media(min-width: 1200px){
+@media(min-width: 1000px){
   .TodoItem {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Adjust minmax width to prevent overflowing */
+
+  }
+}
+@media(min-width: 1400px){
+  .TodoItem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr)); /* Adjust minmax width to prevent overflowing */
 
   }
 }
