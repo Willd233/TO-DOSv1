@@ -23,7 +23,7 @@
 @media(min-width: 1200px){
   .TodoItem {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Adjust minmax width to prevent overflowing */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Adjust minmax width to prevent overflowing */
 
   }
 }
