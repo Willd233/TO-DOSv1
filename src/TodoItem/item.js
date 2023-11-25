@@ -1,29 +1,29 @@
 import './TodoItem.css';
-import { BsCheckLg } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 
 
 function TodoItem(props) {
   return (
-    <li className="TodoItem">
-      <span
-        className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
-        onClick={props.onComplete}
-      >
-       <BsCheckLg /> 
-      </span>
-      <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
-        {props.text}
+    <li className="TodoItem"
+    onClick={props.onComplete}>
+      <h3 className='title'>{props.text}</h3>
+      <p
+        className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
+        {props.title}
       </p>
       <span
         className="Icon Icon-delete "
-        onClick={props.onDelete}
+        onClick={(event)=>{
+          event.stopPropagation();
+          props.onDelete();
+        }}
       >
-       <IoClose />
+        <IoClose />
       </span>
     </li>
   );
 }
+
 
 export { TodoItem };
 // 

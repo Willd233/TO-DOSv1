@@ -22,9 +22,10 @@ function TodoProvider({ children }) {
     return todoText.includes(searchText);
   });
 
-  const addTodo = (text) => {
+  const addTodo = (text, title) => {
     const newTodos = [...todos];
     newTodos.push({
+      title,
       text,
       completed: false,
     });

@@ -1,8 +1,24 @@
 .TodoList {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Adjust minmax width to prevent overflowing */
   align-content: center;
   padding: 0 0 56px 0;
   list-style: none;
   place-items: center;
+  gap: 15px;
+  margin: 10px;
 
+}
+
+@media(min-width: 500px){
+  .TodoList {
+    display: grid;
+    /* margin: 10px; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax width to prevent overflowing */
+    align-content: center;
+    padding: 0 0 56px 0;
+    list-style: none;
+    place-items: center;
+    gap: 15px;
+  }
 }

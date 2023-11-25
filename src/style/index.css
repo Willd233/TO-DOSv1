@@ -13,7 +13,7 @@ body {
   grid-area: root;
   background: #fffffff3;
   position: relative;
-  min-height: 92vh;
+  min-height: 100vh;
   display: grid;
   grid-template-areas:
       "todo1"
@@ -28,7 +28,6 @@ body {
     background: #fffffff3;
     grid-area: root;
     position: relative;
-    min-height: 89vh;
     display: grid;
     grid-template-areas:
       "todo1"
@@ -51,23 +50,26 @@ body {
 }
 
 #root2 {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
   width: 100%;
   font-size: 13px;
-  color: #000000;
   display: grid;
   grid-area: todoMues;
   justify-content: center;
-  background: #fffffff3;
+  background: #7ed3d3;
 }
+
 @media(min-width: 500px){
   #root2 {
-    width: 95%;
+    width: 86%;
+    height: 50px;
     font-size: 13px;
     color: #000000;
     display: grid;
     grid-area: todoMues;
     justify-content: center;
-    background: #fffffff3;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgb(241, 235, 235);
   

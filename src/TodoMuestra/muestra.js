@@ -4,8 +4,7 @@ function TodoMuestra() {
     return(
 
         <div id="">
-            <h1>Credit to: Will</h1>  
-
+            
         </div>
             
     );  
