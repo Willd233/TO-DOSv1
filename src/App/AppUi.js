@@ -9,7 +9,7 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoContext } from '../TodoContext/context';
 import React from 'react';
 import { Modal } from '../Modal/modal';
-import{ TodoForm } from '../TodoForm/form';
+import { TodoForm } from '../TodoForm/form';
 
 function AppUI() {
   const {
@@ -32,17 +32,17 @@ function AppUI() {
         {(!loading && searchedTodos.length ===
           0) && <EmptyTodos />}
 
-        {searchedTodos.map(todo => (
+        {searchedTodos.map((todo, index) => (
           <TodoItem
-            key={todo.text}
+            key={index}
             text={todo.text}
             title={todo.title}
-
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
           />
         ))}
+
       </TodoList>
 
 
