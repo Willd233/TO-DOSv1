@@ -32,9 +32,9 @@ function TodoProvider({ children }) {
     saveTodos(newTodos);
   };
 
-  const setCompleteTodo = (text) => {
+  const setCompleteTodo = (title) => {
     const newTodos = [...todos];
-    const todoIndex = newTodos.findIndex(todo => todo.text === text);
+    const todoIndex = newTodos.findIndex(todo => todo.title === title);
     newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
     saveTodos(newTodos);
   };

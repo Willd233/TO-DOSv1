@@ -26,18 +26,8 @@ body {
   #root {
     width: 95%;
     height: 100vh;
-    background: #fffffff3;
-    grid-area: root;
-    position: relative;
-    display: grid;
-    grid-template-areas:
-      "todo1"
-      "todo2"
-      "todo3"
-      "todo5";
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 20px 0 8px;
-    box-shadow: 0 0px 10px rgb(241, 235, 235);
   }
 }
 
@@ -64,23 +54,15 @@ body {
 
 @media(min-width: 500px){
   #root2 {
-    width: 86%;
-    height: 50px;
-    font-size: 13px;
-    color: #000000;
+    width: 47.5%;
     display: grid;
-    grid-area: todoMues;
-    justify-content: center;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgb(241, 235, 235);
-  
   }
   
 }
 
 @media(min-width: 800px){
   .container {
-    width: 90%;
+    width: 50%;
     display: grid;
     grid-template-areas:
     " root" 

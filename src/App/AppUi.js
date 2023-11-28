@@ -38,7 +38,7 @@ function AppUI() {
             text={todo.text}
             title={todo.title}
             completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
+            onComplete={() => completeTodo(todo.title)}
             onDelete={() => deleteTodo(todo.text)}
           />
         ))}

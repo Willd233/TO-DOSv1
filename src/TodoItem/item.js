@@ -4,16 +4,19 @@ import { IoClose } from "react-icons/io5";
 
 function TodoItem(props) {
   return (
-    <li className="TodoItem"
-    onClick={props.onComplete}>
-      <h3 className='title'>{props.text}</h3>
+    <li
+      className={`TodoItem ${props.completed && "TodoItem--completed"}`}
+      onClick={props.onComplete}
+    >
+      <h3 className="title">{props.text}</h3>
       <p
-        className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
+        className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}
+      >
         {props.title}
       </p>
       <span
-        className="Icon Icon-delete "
-        onClick={(event)=>{
+        className="Icon Icon-delete"
+        onClick={(event) => {
           event.stopPropagation();
           props.onDelete();
         }}
@@ -22,6 +25,7 @@ function TodoItem(props) {
       </span>
     </li>
   );
+  
 }
 
 
