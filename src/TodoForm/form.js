@@ -10,13 +10,21 @@ const options = [
   { label: "Shopping", value: "Shopping" },
 ];
 
-function TodoForm() {
+const TodoForm = () => {
   const { setOpenModal, addTodo } = React.useContext(TodoContext);
   const [newTodoTitle, setNewTodoTitle] = React.useState('');
   const [newTodoValue, setNewTodoValue] = React.useState('');
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
-  // ...
+    if (newTodoTitle && newTodoValue) {
+      addTodo(newTodoTitle, newTodoValue);
+      setOpenModal(false);
+    } else {
+      alert('Please enter both a title and a description for your todo.');
+    }
+  };
 
   const onSelectOption = (selectedOption) => {
     setNewTodoTitle(selectedOption.label);
@@ -26,19 +34,13 @@ function TodoForm() {
     setNewTodoValue(event.target.value);
   };
 
-  const onSubmit = (event) => {
-    event.preventDefault();
-    addTodo(newTodoTitle, newTodoValue);
-    setOpenModal(false);
-  };
-
   const onCancel = (event) => {
     event.preventDefault();
     setOpenModal(false);
   };
 
   return (
-    <form onSubmit={onSubmit} className='form'>
+    <form onSubmit={handleFormSubmit} className='form'>
       <Select
         options={options}
         onChange={onSelectOption}
@@ -62,15 +64,15 @@ function TodoForm() {
       </button>
 
       <button
-        type="button"
+        type="submit"
         className="TodoForm-button TodoForm-button--add"
-        onClick={onSubmit}
       >
         Add
       </button>
     </form>
   );
-}
+};
+
 
 
 
